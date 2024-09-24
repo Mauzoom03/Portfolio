@@ -1,6 +1,5 @@
 import { useEffect, useRef } from "react";
 import "./_main.scss";
-import background from "../../../../public/images//background2test .mp4";
 import gsap from 'gsap';
 import { useTranslation } from "react-i18next";
 
@@ -32,7 +31,7 @@ function Main() {
   return (
     <>
       <div className="container-main" id="main">
-        <video className="background" src={background} autoPlay loop muted />
+        <video className="background" src="../../../../public/images/background2test .mp4" autoPlay loop muted />
         <div className="text-container">
           <h1 ref={titleRef} className="title">
             {t("main.title")}
