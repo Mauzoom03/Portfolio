@@ -31,7 +31,13 @@ function Main() {
   return (
     <>
       <div className="container-main" id="main">
-        <video className="background" src="../../../../public/images/background2test .mp4" autoPlay loop muted />
+        <video
+          className="background"
+          src="/images/background2test .mp4"
+          autoPlay
+          loop
+          muted
+        />
         <div className="text-container">
           <h1 ref={titleRef} className="title">
             {t("main.title")}
@@ -40,10 +46,7 @@ function Main() {
           <h2 ref={subtitleRef} className="subtitle">
             {t("main.subtitle")}
           </h2>
-          <a
-            href="/public/Mauro Quintana(D).pdf"
-            download="mi_cv.pdf"
-          >
+          <a href="/Mauro Quintana(D).pdf" download="mi_cv.pdf">
             <button className="btnCv">{t("main.downloadCv")}</button>
           </a>
         </div>
