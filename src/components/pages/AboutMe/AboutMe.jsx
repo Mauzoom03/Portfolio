@@ -1,6 +1,9 @@
-import React, { useEffect, useRef } from "react";
+import { useEffect, useRef } from "react";
 import "./_aboutMe.scss";
 import gsap from "gsap";
+import Aptitudes from "../Aptitudes/Aptitudes";
+import { useTranslation } from "react-i18next";
+
 function AboutMe() {
   const images = [
     {
@@ -73,10 +76,30 @@ function AboutMe() {
       imageUrl: "/src/components/images/symfony.png",
       title: "Symfony",
     },
+    {
+      id: 15,
+      imageUrl: "/src/components/images/Microsoft_.NET_logo.svg.png",
+      title: ".Net",
+    },
+    {
+      id: 16,
+      imageUrl: "/src/components/images/wordpress-logo-wordpress-icon-transparent-png-free-vector.jpg",
+      title: "WordPress",
+    },
+    {
+      id: 14,
+      imageUrl: "/src/components/images/laravel.webp",
+      title: "Laravel",
+    },
+    {
+      id: 15,
+      imageUrl: "/src/components/images/AWS-logo-2.jpg",
+      title: "AWS",
+    },
   ];
 
   const containerRef = useRef(null);
-
+  const { t } = useTranslation();
   useEffect(() => {
     const container = containerRef.current;
 
@@ -116,7 +139,7 @@ function AboutMe() {
   return (
     <div className="container-aboutMe" id="about-me" ref={containerRef}>
       <div className="info-container-title">
-        <h1>Sobre mi.</h1>
+        <h1>{t("about.title")}</h1>
         <div />
         <div className="container-img">
           <img
@@ -125,26 +148,21 @@ function AboutMe() {
             alt="aboutme"
           />
           <div className="text-container">
+            <h2 className="subtitle">{t("about.intro")}</h2>
             <h2 className="subtitle">
-              Mi nombre completo es Mauro Quintana Hernandez.Desde mi infancia,
-              descubrí no solo mi afinidad por pasar tiempo frente al ordenador,
-              sino también mi curiosidad innata por comprender el porqué de las
-              cosas y cómo se estructuraban.
-            </h2>
-            <h2 className="subtitle">
-              Esta fascinación fue lo que me impulsó hacia el mundo del
-              desarrollo. Me distingo por mi simpatía y mi habilidad para
-              resolver problemas de cualquier índole. Considero que el trabajo
-              en equipo es fundamental y forma parte integral de mi día a día.
-              Actualmente, me desempeño como freelancer con el objetivo de
-              adquirir la máxima experiencia posible y crecer constantemente en
-              mi desarrollo profesional. Ubicado en Madrid, España📍.
+              {t("about.detail").split("freelancer")[0]}
+              <span style={{ color: "blue", fontWeight: "bold" }}>
+                freelancer
+              </span>
+              {t("about.detail").split("freelancer")[1].split("Madrid")[0]}
+              <span style={{ color: "red", fontWeight: "bold" }}>Madrid</span>
+              {t("about.detail").split("Madrid")[1]}
             </h2>
           </div>
         </div>
       </div>
       <div className="container-skills-title">
-        <h1 className="skills-title">Habilidades</h1>
+        <h1 className="skills-title">{t("skills.title")}</h1>
       </div>
       <div className="container-skills-img">
         <ul className="list-skills">
@@ -164,47 +182,11 @@ function AboutMe() {
           ))}
         </ul>
       </div>
-      <div className="container-aptitudes">
-        <div className="aptitudes">
-          <h3>Idiomas</h3>
-          <div className="progress-bar">
-            <div className="progress espanol" style={{ width: "80%" }}>
-              Español (100%)
-            </div>
-          </div>
-          <div className="progress-bar">
-            <div className="progress ingles" style={{ width: "70%" }}>
-              Inglés (90%)
-            </div>
-          </div>
-          <div className="progress-bar">
-            <div className="progress frances" style={{ width: "40%" }}>
-              Francés (40%)
-            </div>
-          </div>
-        </div>
-        <div className="aptitudes">
-          <h3>Habilidades Sociales</h3>
-          <div className="progress-bar">
-            <div className="progress javascript" style={{ width: "80%" }}>
-              Comunicación (100%)
-            </div>
-          </div>
-          <div className="progress-bar">
-            <div className="progress react" style={{ width: "80%" }}>
-              Trabajo en Equipo (100%)
-            </div>
-          </div>
-          <div className="progress-bar">
-            <div className="progress react" style={{ width: "70%" }}>
-              Resolucion de problemas (90%)
-            </div>
-          </div>
-        </div>
-      </div>
+
+      <Aptitudes />
 
       <div className="container-formacion-title ">
-        <h1 className="formacion-title">Formación</h1>
+        <h1 className="formacion-title">{t("formacion.title")}</h1>
       </div>
       <div className="container-formacion-img">
         <img
@@ -212,7 +194,7 @@ function AboutMe() {
           src="https://www.todoenlaces.com/wp-content/uploads/job-manager-uploads/featured_image/2023/08/LOGOTIPO_UPGRADE-01.png"
           alt="formacion"
         />
-        <h2>Bootcamp Desarrollo FullStack de 6 meses de duración (2023)</h2>
+        <h2>{t("formacion.description")}</h2>
       </div>
     </div>
   );

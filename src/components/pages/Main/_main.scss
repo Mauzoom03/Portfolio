@@ -5,7 +5,7 @@
 
 .container-main {
   width: 100%;
-  height: 100vh;
+  min-height: 100vh;
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -24,6 +24,7 @@
   > div.text-container {
     color: rgb(255, 255, 255);
     position: absolute;
+    width: 100%;
     text-align: center;
     z-index: 1;
     top: 50%;
@@ -76,5 +77,26 @@
         box-shadow: 0 0 10px rgb(255, 255, 255);
       }
     }
+  }
+}
+@media (max-width: 768px) {
+  .container-main {
+    justify-content: flex-start; // Cambiar el centrado en móviles para evitar el gran espacio debajo
+    padding: 20px; // Añadir algo de padding para mejor separación
+  }
+
+  .text-container {
+    top: auto; // Permitir que el texto fluya naturalmente en la pantalla móvil
+    transform: none; // Eliminar el transform en móviles para mejor alineación
+    text-align: center;
+    padding: 20px;
+  }
+
+  .text-container h1.title {
+    font-size: 40px; // Ajustar el tamaño del título en móviles
+  }
+
+  .text-container h2.subtitle {
+    font-size: 18px; // Ajustar el tamaño del subtítulo en móviles
   }
 }

@@ -3,21 +3,13 @@
 body {
   background-color: var(--background-color);
   color: var(--text-color);
+  overflow-x: hidden;
 }
 
 a {
   color: var(--link-color);
 }
 
-/* Estilos específicos para el modo oscuro */
-body.dark-mode {
-  background-color: var(--background-color-dark);
-  color: var(--text-color-dark);
-}
-
-a.dark-mode {
-  color: var(--link-color-dark);
-}
 
 .container-logo {
   width: 100%;
@@ -30,7 +22,7 @@ a.dark-mode {
 
   .logo {
     height: 80px;
-    width: 20%;
+    width: 300px;
     max-width: 700px;
     max-height: 700px;
     object-fit: cover;
@@ -48,7 +40,7 @@ a.dark-mode {
 }
 
 .container-logo > nav.container-links {
-  width: 100%;
+  width: 60%;
   align-items: center;
 
   > ul.links {
@@ -96,19 +88,32 @@ a.dark-mode {
   }
 }
 
-.toggle-dark-mode {
-  background: transparent;
-  border: none;
-  cursor: pointer;
-  font-size: 24px;
-  color: #333; /* Color del icono en el modo claro */
+  .language-switcher {
+    display: flex;
+    gap: 10px;
+    align-items: center;
+    justify-content: end;
 
-  &:hover {
-    color: #666; /* Color del icono al pasar el mouse en el modo claro */
+    .lang-btn {
+      background-color: transparent;
+      border: 1px solid white;
+      color: white;
+      padding: 5px 10px;
+      cursor: pointer;
+      font-size: 14px;
+      border-radius: 5px;
+      transition: background-color 0.3s ease, color 0.3s ease;
+
+      &:hover {
+        background-color: white;
+        color: black;
+      }
+
+      &:focus {
+        outline: none;
+      }
+    }
   }
-}
-
-
 
 @media screen and (max-width: 768px) {
   .container-logo {
@@ -125,9 +130,11 @@ a.dark-mode {
 
   .container-links {
     width: 100%;
-    justify-content: center; 
+    justify-content: space-around; 
     display: flex;
-    align-items: center; 
+    align-items: center;
+    margin: 0 auto;
+    
   }
 
   .links {

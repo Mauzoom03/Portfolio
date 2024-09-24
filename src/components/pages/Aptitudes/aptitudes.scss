@@ -1,0 +1,38 @@
+.container-aptitudes {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: space-around;
+  font-family: 'Roboto', sans-serif;
+  margin: 0 auto;
+  padding: 20px;
+  max-width: 1200px;
+}
+
+.aptitudes {
+  flex: 1 1 200px;
+  margin: 10px;
+}
+
+.progress-bar {
+  width: 100%;
+  background-color: #f0f0f0;
+  border-radius: 10px;
+  overflow: hidden;
+  margin: 10px 0;
+
+  .progress {
+    background-color: #3b82f6;
+    height: 30px;
+    line-height: 30px;
+    color: white;
+    text-align: center;
+    transition: width 1s ease-in-out;
+    width: 0%; // Comienza a 0
+
+    &.active {
+      width: inherit;
+    }
+  }
+}

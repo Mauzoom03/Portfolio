@@ -1,10 +1,12 @@
-import React from "react";
+
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faLinkedin, faGithub, faInstagram } from "@fortawesome/free-brands-svg-icons";
 import { faEnvelope } from "@fortawesome/free-solid-svg-icons";
 import "./_footer.scss";
+import { useTranslation } from "react-i18next";
 
 function Footer() {
+  const { t } = useTranslation();
   return (
     <footer className="footer">
       <div className="social-icons">
@@ -22,7 +24,7 @@ function Footer() {
         </a>
       </div>
       <div className="copyright">
-        <p>&copy; 2024 Mauro Quintana Hernandez. Todos los derechos reservados.</p>
+        <p>{ t("footer.description")}</p>
       </div>
     </footer>
   );

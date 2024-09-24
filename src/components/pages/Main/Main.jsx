@@ -1,11 +1,16 @@
-import React, { useEffect, useRef } from "react";
+import { useEffect, useRef } from "react";
 import "./_main.scss";
 import background from "../../images/background2test .mp4";
 import gsap from 'gsap';
+import { useTranslation } from "react-i18next";
+
+
 
 function Main() {
   const titleRef = useRef(null);
   const subtitleRef = useRef(null);
+
+  const { t } = useTranslation();
 
   useEffect(() => {
     const title = titleRef.current;
@@ -29,15 +34,18 @@ function Main() {
       <div className="container-main" id="main">
         <video className="background" src={background} autoPlay loop muted />
         <div className="text-container">
-          <h1 ref={titleRef} className="title">Hola, soy Mauro Quintana👋 </h1>
-          <br/>
+          <h1 ref={titleRef} className="title">
+            {t("main.title")}
+          </h1>
+          <br />
           <h2 ref={subtitleRef} className="subtitle">
-            Desarrollador FullStack Junior creando experiencias digitales desde
-            cero hasta la cima. ¡Bienvenido a mi portafolio, donde la innovación y
-            la creatividad se unen para dar vida a proyectos impactantes!
+            {t("main.subtitle")}
           </h2>
-          <a href="/src/components/utils/Mauro Quintana(D).pdf" download="mi_cv.pdf">
-            <button className="btnCv">Descargar CV</button>
+          <a
+            href="/src/components/utils/Mauro Quintana(D).pdf"
+            download="mi_cv.pdf"
+          >
+            <button className="btnCv">{t("main.downloadCv")}</button>
           </a>
         </div>
       </div>

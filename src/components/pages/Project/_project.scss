@@ -80,18 +80,15 @@
       font-family: $roboto-serif;
   
       > h2 {
-        font-size: 25px;
+        font-size: 20px;
         color: adjust-hue($color: #cdced8, $degrees: 15);
         margin-left: 2%;
         margin-top: 5%;
       }
 
-      > h2.onprocess {
-        color: rgb(0, 0, 0);
-        font-style: italic;
-        font-size: 20px;
-        font-family: $roboto-serif;
-      }
+
+    
+      
 
       > div.container-btn{
         width: 100%;
@@ -128,4 +125,5 @@
     }
 
   }
+
 }
