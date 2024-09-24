@@ -8,92 +8,92 @@ function AboutMe() {
   const images = [
     {
       id: 1,
-      imageUrl: "../../../../public/images/JS.png",
+      imageUrl: "/images/JS.png",
       title: "JavaScript",
     },
     {
       id: 2,
-      imageUrl: "../../../../public/images/React.png",
+      imageUrl: "/images/React.png",
       title: "React",
     },
     {
       id: 3,
-      imageUrl: "../../../../public/images/Angular.png",
+      imageUrl: "/images/Angular.png",
       title: "Angular",
     },
     {
       id: 4,
-      imageUrl: "../../../../public/images/html.png",
+      imageUrl: "/images/html.png",
       title: "Html",
     },
     {
       id: 5,
-      imageUrl: "../../../../public/images/css.png",
+      imageUrl: "/images/css.png",
       title: "Css",
     },
     {
       id: 6,
-      imageUrl: "../../../../public/images/SASS.png",
+      imageUrl: "/images/SASS.png",
       title: "Sass",
     },
     {
       id: 7,
-      imageUrl: "../../../../public/images/NextJs.png",
+      imageUrl: "/images/NextJs.png",
       title: "NextJs",
     },
     {
       id: 8,
-      imageUrl: "../../../../public/images/TS.png",
+      imageUrl: "/images/TS.png",
       title: "TypeScript",
     },
     {
       id: 9,
-      imageUrl: "../../../../public/images/php.png",
+      imageUrl: "/images/php.png",
       title: "PHP",
     },
     {
       id: 10,
-      imageUrl: "../../../../public/images/sql.png",
+      imageUrl: "/images/sql.png",
       title: "SQL",
     },
     {
       id: 11,
-      imageUrl: "../../../../public/images/Node.png",
+      imageUrl: "/images/Node.png",
       title: "NodeJs",
     },
     {
       id: 12,
-      imageUrl: "../../../../public/images/Github.png",
+      imageUrl: "/images/Github.png",
       title: "GitHub",
     },
     {
       id: 13,
-      imageUrl: "../../../../public/images/MongoDb.png",
+      imageUrl: "/images/MongoDb.png",
       title: "MongoDB",
     },
     {
       id: 14,
-      imageUrl: "../../../../public/images/symfony.png",
+      imageUrl: "/images/symfony.png",
       title: "Symfony",
     },
     {
       id: 15,
-      imageUrl: "../../../../public/images/Microsoft_.NET_logo.svg.png",
+      imageUrl: "/images/Microsoft_.NET_logo.svg.png",
       title: ".Net",
     },
     {
       id: 16,
-      imageUrl: "../../../../public/images/wordpress-logo-wordpress-icon-transparent-png-free-vector.jpg",
+      imageUrl: "/images/wordpress-logo-wordpress-icon-transparent-png-free-vector.jpg",
       title: "WordPress",
     },
     {
       id: 14,
-      imageUrl: "../../../../public/images/laravel.webp",
+      imageUrl: "/images/laravel.webp",
       title: "Laravel",
     },
     {
       id: 15,
-      imageUrl: "../../../../public/images/AWS-logo-2.jpg",
+      imageUrl: "/images/AWS-logo-2.jpg",
       title: "AWS",
     },
   ];
@@ -144,7 +144,7 @@ function AboutMe() {
         <div className="container-img">
           <img
             className="aboutmeImg"
-            src="../../../../public/images/AboutMeImg.png"
+            src="/images/AboutMeImg.png"
             alt="aboutme"
           />
           <div className="text-container">
