@@ -1,9 +1,9 @@
 import { useState } from "react";
 import "./_project.scss";
-import DemoUpcode from "../../images/CodeHUBAzulTransparente.png";
-import DemoWiki_Books from "../../images/Logo.gif";
-import techinder from "../../images/Screenshot 2024-09-23 154514.png";
-import VideoDemo from "../../images/Demo Upcode.mp4";
+import DemoUpcode from "../../../../public/images/CodeHUBAzulTransparente.png";
+import DemoWiki_Books from "../../../../public/images/Logo.gif";
+import techinder from "../../../../public/images/Screenshot 2024-09-23 154514.png";
+import VideoDemo from "../../../../public/images/Demo Upcode.mp4";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faExternalLinkAlt } from "@fortawesome/free-solid-svg-icons";
 import { useTranslation } from "react-i18next";

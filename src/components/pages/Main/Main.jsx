@@ -1,6 +1,6 @@
 import { useEffect, useRef } from "react";
 import "./_main.scss";
-import background from "../../images/background2test .mp4";
+import background from "../../../../public/images//background2test .mp4";
 import gsap from 'gsap';
 import { useTranslation } from "react-i18next";
 
