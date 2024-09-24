@@ -42,7 +42,7 @@ function Main() {
             {t("main.subtitle")}
           </h2>
           <a
-            href="/src/components/utils/Mauro Quintana(D).pdf"
+            href="/public/Mauro Quintana(D).pdf"
             download="mi_cv.pdf"
           >
             <button className="btnCv">{t("main.downloadCv")}</button>

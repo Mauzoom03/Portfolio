@@ -1,5 +1,5 @@
 import { useState, useEffect } from "react";
-import logo from "../../images/Mauro q.h.png";
+import logo from "../../../../public/images/Mauro q.h.png";
 import "./_header.scss";
 import { Link as ScrollLink } from "react-scroll";
 import { useTranslation } from "react-i18next";
