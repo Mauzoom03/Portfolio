@@ -99,7 +99,7 @@ function AboutMe() {
     },
     {
       id: 16,
-      imageUrl: "public/images/IM_VS Code - Icono.png",
+      imageUrl: "/images/IM_VS Code - Icono.png",
       title: "VisualStudio",
     },
     {
