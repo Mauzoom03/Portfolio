@@ -98,11 +98,6 @@ function AboutMe() {
       title: "AWS",
     },
     {
-      id: 16,
-      imageUrl: "/images/IM_VS Code - Icono.png",
-      title: "VisualStudio",
-    },
-    {
       id: 17,
       imageUrl: "/images/Figma.png",
       title: "Figma",
