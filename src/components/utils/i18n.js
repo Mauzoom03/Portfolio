@@ -103,7 +103,7 @@ i18n.use(initReactI18next).init({
           },
         },
         formacion: {
-          title: "Formacion",
+          title: "Formación",
           description: "Bootcamp Desarrollo Fullstack(2023)",
         },
         projects: {

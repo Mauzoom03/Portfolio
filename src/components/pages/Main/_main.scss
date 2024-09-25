@@ -24,13 +24,13 @@
   > div.text-container {
     color: rgb(255, 255, 255);
     position: absolute;
-    width: 100%;
+    width: 80%;
     text-align: center;
     z-index: 1;
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
-    font-family: $roboto-serif;
+    font-family: $roboto;
     cursor: context-menu;
 
     > h1.title {
@@ -40,7 +40,7 @@
     }
 
     > h2.subtitle {
-      font-size: 25px;
+      font-size: 30px;
       color: adjust-hue($color: #cdced8, $degrees: 15);
       transition: transform 0.3s ease;
     }
@@ -98,5 +98,21 @@
 
   .text-container h2.subtitle {
     font-size: 18px; // Ajustar el tamaño del subtítulo en móviles
+  }
+}
+
+@media (min-width: 1200px) {
+  .container-main {
+    justify-content: center; // Mantener el contenido centrado en pantallas grandes
+    padding: 40px; // Añadir más espacio alrededor del contenido
+  }
+
+
+  .text-container h1.title {
+    font-size: 70px; // Aumentar el tamaño del título en pantallas grandes
+  }
+
+  .text-container h2.subtitle {
+    font-size: 24px; // Aumentar el tamaño del subtítulo en pantallas grandes
   }
 }

@@ -6,17 +6,17 @@ $degradado-azul: linear-gradient(to bottom, $color-blanco, $color-azul);
 
 
 
-.roboto-serif {
-    font-family: "Roboto Serif", serif;
+.roboto {
+    font-family: "Roboto", sans-serif;
     font-optical-sizing: auto;
-    font-weight: 700;
+    font-weight: 400;
     font-style: normal;
     font-variation-settings:
       "wdth" 100,
       "GRAD" 0;
   }
 
-  $roboto-serif: "Roboto Serif", serif;
+  $roboto: "Roboto", sans-serif;
 
   :root {
     --background-color-dark: #222;

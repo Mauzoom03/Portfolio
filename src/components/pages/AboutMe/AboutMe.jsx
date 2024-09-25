@@ -83,7 +83,8 @@ function AboutMe() {
     },
     {
       id: 16,
-      imageUrl: "/images/wordpress-logo-wordpress-icon-transparent-png-free-vector.jpg",
+      imageUrl:
+        "/images/wordpress-logo-wordpress-icon-transparent-png-free-vector.jpg",
       title: "WordPress",
     },
     {
@@ -95,6 +96,16 @@ function AboutMe() {
       id: 15,
       imageUrl: "/images/AWS-logo-2.jpg",
       title: "AWS",
+    },
+    {
+      id: 16,
+      imageUrl: "public/images/IM_VS Code - Icono.png",
+      title: "VisualStudio",
+    },
+    {
+      id: 17,
+      imageUrl: "/images/Figma.png",
+      title: "Figma",
     },
   ];
 
@@ -151,11 +162,11 @@ function AboutMe() {
             <h2 className="subtitle">{t("about.intro")}</h2>
             <h2 className="subtitle">
               {t("about.detail").split("freelancer")[0]}
-              <span style={{ color: "blue", fontWeight: "bold" }}>
+              <span style={{ color: "black" , fontWeight: "bold"  }}>
                 freelancer
               </span>
               {t("about.detail").split("freelancer")[1].split("Madrid")[0]}
-              <span style={{ color: "red", fontWeight: "bold" }}>Madrid</span>
+              <span style={{ color: "black", fontWeight: "bold" }}>Madrid</span>
               {t("about.detail").split("Madrid")[1]}
             </h2>
           </div>

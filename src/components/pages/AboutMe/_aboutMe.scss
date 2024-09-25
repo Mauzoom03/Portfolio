@@ -19,7 +19,7 @@ html {
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    font-family: $roboto-serif;
+    font-family: $roboto;
     cursor: context-menu;
     flex-wrap: wrap;
 
@@ -84,7 +84,7 @@ html {
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    font-family: $roboto-serif;
+    font-family: $roboto;
     cursor: context-menu;
 
     > h1.skills-title {
@@ -193,7 +193,7 @@ html {
     margin: 0 auto;
     max-width: 1200px;
 
-    font-family: $roboto-serif;
+    font-family: $roboto;
   }
   
   .aptitudes {
@@ -240,7 +240,7 @@ html {
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    font-family: $roboto-serif;
+    font-family: $roboto;
     cursor: context-menu;
 
 
@@ -259,119 +259,124 @@ html {
       &:before {
         content: "";
         display: block;
-        height: 100px; // Ajusta según sea necesario
+        height: 100px;
       }
     }
   }
   
-  > div.container-formacion-img {
-    display: flex;
-    flex-direction: row;
-    justify-content: center;
-    width: 100%;
-    height: 100%;
-    box-shadow: rgba(6, 24, 44, 0.4) 0px 0px 0px 2px, rgba(6, 24, 44, 0.65) 0px 4px 6px -1px, rgba(255, 255, 255, 0.08) 0px 1px 0px inset;
+ > div.container-formacion-img {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center; 
+  width: 100%;
+  height: auto; 
+  box-shadow: rgba(6, 24, 44, 0.4) 0px 0px 0px 2px, rgba(6, 24, 44, 0.65) 0px 4px 6px -1px, rgba(255, 255, 255, 0.08) 0px 1px 0px inset;
 
-    > img.formacionImg {
-        width: 500px;
-        max-width: 800px;
-        object-fit: cover;
-    }
-
-    > h2 {
-        font-size: 25px;
-        color: adjust-hue($color: #cdced8, $degrees: 15);
-        margin-left: 2%;
-        margin-top: 5%;
-
-    }
+  > img.formacionImg {
+    width: 500px;
+    max-width: 800px;
+    height: auto;
+    object-fit: cover;
   }
+
+  > h2 {
+    font-size: 25px;
+    color: adjust-hue($color: #cdced8, $degrees: 15);
+    margin-left: 20px; 
+    text-align: left;
+    line-height: 1.5; 
+    max-width: 300px; 
+  }
+
+}
+
 }
 
 
 @media screen and (max-width: 768px) {
   .info-container-title > h1 {
-    font-size: 2em; /* Reduce el tamaño de la fuente del título */
-    text-align: center; /* Centra el texto del título */
-    margin-bottom: 10px; /* Añade un pequeño margen inferior al título */
+    font-size: 2em; 
+    text-align: center; 
+    margin-bottom: 10px;
   }
 
   .container-img {
-    flex-direction: column; /* Cambia la dirección de los elementos a columna */
-    align-items: center; /* Centra los elementos secundarios */
-    margin-top: 20px; /* Añade un pequeño margen superior */
+    flex-direction: column; 
+    align-items: center;
+    margin-top: 20px;
   }
 
   .aboutmeImg {
-    width: 80%; /* Reduce el ancho de la imagen */
-    max-width: 300px; /* Establece un máximo para la anchura */
-    margin-bottom: 20px; /* Añade un pequeño margen inferior */
+    width: 80%; 
+    max-width: 300px;
+    margin-bottom: 20px;
   }
 
   .text-container {
-    width: 80%; /* Reduce el ancho del contenedor de texto */
-    text-align: center; /* Centra el texto */
+    width: 80%;
+    text-align: center; 
   }
 
   .subtitle {
-    font-size: 1em; /* Reduce el tamaño de la fuente del subtítulo */
+    font-size: 1em; 
   }
 
   .container-skills-img {
-    padding: 20px 0; /* Añade un espacio entre las habilidades y los títulos */
+    padding: 20px 0; 
   }
 
   .skills-title {
-    font-size: 2em; /* Reduce el tamaño de la fuente del título de habilidades */
-    text-align: center; /* Centra el texto del título */
-    margin-bottom: 10px; /* Añade un pequeño margen inferior al título */
+    font-size: 2em; 
+    text-align: center; 
+    margin-bottom: 10px; 
   }
 
   .list-skills {
-    gap: 20px; /* Reduce el espacio entre las tarjetas de habilidades */
+    gap: 20px;
   }
 
   .card {
-    width: 80px; /* Reduce el tamaño de las tarjetas de habilidades */
-    height: 80px; /* Reduce el tamaño de las tarjetas de habilidades */
-    margin-bottom: 20px; /* Añade un pequeño margen inferior */
+    width: 80px; 
+    height: 80px; 
+    margin-bottom: 20px; 
   }
 
   .card img {
-    width: 100%; /* Ajusta el tamaño de la imagen de la tarjeta */
-    height: 100%; /* Ajusta el tamaño de la imagen de la tarjeta */
+    width: 100%; 
+    height: 100%; 
   }
 
   .aptitudes {
-    width: 100%; /* Ajusta el ancho del contenedor de aptitudes */
-    text-align: center; /* Centra el texto */
-    margin-bottom: 20px; /* Añade un pequeño margen inferior */
+    width: 100%; 
+    text-align: center; 
+    margin-bottom: 20px;
   }
-
   .progress-bar {
-    margin-bottom: 10px; /* Añade un pequeño margen inferior a las barras de progreso */
+    margin-bottom: 10px; 
   }
 
   .container-formacion-title > h1 {
-    font-size: 2em; /* Reduce el tamaño de la fuente del título de formación */
-    text-align: center; /* Centra el texto del título */
-    margin-bottom: 10px; /* Añade un pequeño margen inferior al título */
-  }
+    font-size: 2em;
+    text-align: center;
+    margin-bottom: 10px;
 
   .container-formacion-img {
-    flex-direction: column; /* Cambia la dirección de los elementos a columna */
-    align-items: center; /* Centra los elementos secundarios */
+    flex-direction: column; 
+    align-items: center; 
   }
 
   .formacionImg {
-    width: 80%; /* Reduce el ancho de la imagen */
-    max-width: 300px; /* Establece un máximo para la anchura */
-    margin-bottom: 20px; /* Añade un pequeño margen inferior */
+    width: 80%; 
+    max-width: 300px; 
+    margin-bottom: 20px; 
   }
 
   .container-formacion-img > h2 {
-    font-size: 1em; /* Reduce el tamaño de la fuente del subtítulo */
-    text-align: center; /* Centra el texto del subtítulo */
-    margin-bottom: 10px; /* Añade un pequeño margen inferior al subtítulo */
+    font-size: 1em; 
+    text-align: center;
+    margin-bottom: 10px; 
   }
+}
+
 }

@@ -17,7 +17,7 @@ function Project() {
     setShowDemo(!showDemo);
   };
 
-  const handleClick2 = () => {
+  const handleClick2 = () => { // pendiente de despliegue de su proyecto para ser mostrado//
     setShowDemo2(!showDemo2);
   };
 
@@ -65,22 +65,11 @@ function Project() {
         <img className="Demo" src={DemoWiki_Books} alt="Proyecto 2" />
         <div className="container-description">
           <h2>{t("projects.description2")}</h2>
-          <div className="container-btn">
-            <button className="btn" onClick={handleClick2}>
-              {showDemo2 ? t("projects.hideDemo") : t("projects.showDemo")}
-            </button>
-            <button
-              className="overlay-button"
-              onClick={() =>
-                (window.location.href = "https://wiki_books_demo.com")
-              }
-            >
-              {t("projects.website")}
-              <FontAwesomeIcon icon={faExternalLinkAlt} />
-            </button>
+          
           </div>
         </div>
-      </div>
+    
+    
 
       {/* tercer proyecto */}
       <div className="container-projects">
@@ -88,13 +77,6 @@ function Project() {
         <div className="container-description">
           <h2>{t("projects.description3")}</h2>
           <div className="container-btn">
-            <button
-              className="overlay-button"
-              onClick={() => (window.location.href = "https://techinder.com")}
-            >
-              {t("projects.website")}
-              <FontAwesomeIcon icon={faExternalLinkAlt} />
-            </button>
           </div>
         </div>
       </div>
