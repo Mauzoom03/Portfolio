@@ -7,7 +7,7 @@ import VideoDemo from "../../../../public/images/Demo Upcode.mp4";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faExternalLinkAlt } from "@fortawesome/free-solid-svg-icons";
 import { useTranslation } from "react-i18next";
-
+const NerdiasLogo = "https://res.cloudinary.com/duaztq3yf/image/upload/v1729675988/Nerdias_App/Screenshot_2024-10-17_122620_ravoys.png"
 
 function Project() {
   const [showDemo, setShowDemo] = useState(false);
@@ -60,24 +60,28 @@ function Project() {
         </div>
       </div>
 
-      {/* Segundo proyecto */}
+      {/* cuarto proyecto */}
+      <div className="container-projects">
+        <img className="Demo" src={NerdiasLogo} style ={{ width: "20%", height: "300px" }} alt="Proyecto 4" />
+        <div className="container-description">
+          <h2>{t("projects.description4")}</h2>
+        </div>
+      </div>
+
+      {/* segundo proyecto */}
       <div className="container-projects">
         <img className="Demo" src={DemoWiki_Books} alt="Proyecto 2" />
         <div className="container-description">
           <h2>{t("projects.description2")}</h2>
-          
-          </div>
         </div>
-    
-    
+      </div>
 
       {/* tercer proyecto */}
       <div className="container-projects">
-        <img className="Demo" src={techinder} alt="Proyecto 2" />
+        <img className="Demo" src={techinder} alt="Proyecto 3" />
         <div className="container-description">
           <h2>{t("projects.description3")}</h2>
-          <div className="container-btn">
-          </div>
+          <div className="container-btn"></div>
         </div>
       </div>
     </div>

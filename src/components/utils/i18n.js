@@ -47,9 +47,11 @@ i18n.use(initReactI18next).init({
           description: "FullStack Developer Bootcamp(2023)",
         },
         projects: {
-          title: "Personal Projects",
+          title: "Professional Projects",
           description1:
             "UP CODE is an essential tool for frontend developers that simplifies the creation of elements for apps and websites. With UP CODE, you can easily design contact forms for your business or customize the look of your blog in a matter of minutes. The tool automatically generates the code needed to implement your designs.",
+          description4:
+            " Nerdias is an application designed to centralize resources on artificial intelligence, covering courses, libraries, tools, communities, and news. Developed in React, its purpose is to become a comprehensive and accessible space for anyone interested in AI. The beta version of Nerdias is set to launch in December.",
           description2:
             "Wiki Books is an innovative literary platform, developed with PHP Laravel and supported by a solid SQL database. This application is designed for reading lovers, offering an exclusive niche where you can explore and discover a vast collection of classic works of world literature. The interface is intuitive and makes it easy to find iconic titles, renowned authors and genres that have marked literary history. With an elegant and functional design, Wiki Books makes the experience of finding and reading classics something accessible and enriching for any passionate reader. (Coming soon to production)",
           description3:
@@ -107,9 +109,11 @@ i18n.use(initReactI18next).init({
           description: "Bootcamp Desarrollo Fullstack(2023)",
         },
         projects: {
-          title: "Proyectos Personales",
+          title: "Proyectos Profesionales",
           description1:
             " UP CODE es una herramienta esencial para desarrolladores de frontend que simplifica la creación de elementos para aplicaciones y sitiosweb. Con UP CODE, puedes diseñar fácilmente formularios de contactopara tu negocio o personalizar el aspecto de tu blog en cuestión deminutos. La herramienta genera automáticamente el código necesario para implementar tus diseños.",
+          description4:
+            " Nerdias es una aplicación diseñada para centralizar recursos sobre inteligencia artificial, abarcando cursos, bibliotecas, herramientas, comunidades y noticias. Desarrollada en React, su propósito es convertirse en un espacio completo y accesible para cualquier interesado en IA. La versión beta de Nerdias está programada para lanzarse en diciembre.",
           description2:
             "Wiki Books es una plataforma literaria innovadora, desarrollada con PHP Laravel y respaldada por una sólida base de datos en SQL. Esta aplicación está diseñada para los amantes de la lectura, ofreciendo un nicho exclusivo donde puedes explorar y descubrir una vasta colección de obras clásicas de la literatura mundial. La interfaz es intuitiva y facilita la búsqueda de títulos icónicos, autores reconocidos y géneros que han marcado la historia literaria. Con un diseño elegante y funcional, Wiki Books convierte la experiencia de encontrar y leer clásicos en algo accesible y enriquecedor para cualquier lector apasionado.(Proximamente despliegue en produccion)",
           description3:
